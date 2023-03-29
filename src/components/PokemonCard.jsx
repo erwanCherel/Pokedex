@@ -4,7 +4,7 @@ export default PokemonCard;
 function PokemonCard({ pokemon }) {
 
     return <figure>
-    {pokemon.hasOwnProperty('imgSrc') ? (
+    {pokemon.hasOwnProperty.call(pokemon, 'imgSrc') ? (
         <img src={pokemon.imgSrc} alt={pokemon.name} />
       ) : (
         <p>???</p>
